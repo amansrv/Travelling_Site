@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:; */
+}
+
+/* .showcase {
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    min-height: 100vh padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    z-index: 2;
+} */
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: aqua;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-image: url(/images/menu-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background-image: url(/images/close-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    mix-blend-mode: overlay;
+
+}
+
+.text {
+    top: 245px;
+    left: 105px;
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    color: aqua;
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-decoration: uppercase;
+}
+
+.text h3 {
+    color: aqua;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-decoration: uppercase;
+
+}
+
+.text p {
+    color: azure;
+    font-size: 1.1em;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text a {
+
+    display: inline-block;
+    font-size: 1em;
+    background-color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+
+}
+
+/* box pr click krte hi size km zada k liye */
+.text a:hover {
+    letter-spacing: 6px;
+}
+
+.social {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+}
+
+.social li {
+    list-style: none;
+    height: 92px;
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(0.5) translate(-15px);
+}
+
+footer{
+    color: white;
+    background-color: #111;
+}
+
+footer p{
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+
+    .showcase,
+    .showcase header {
+        padding: 40px;
+    }
+}
+
+.text h2 {
+    font-size: 3em;
+}
+
+.text h3 {
+    font-size: 2em;
+}
+
+.menu {
+    display: none;
+}
